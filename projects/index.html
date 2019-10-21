@@ -1,74 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/10fdf55e4b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <script src="/assets/js/main.js" defer></script>
+    <title>Jon Bodnar | Projects</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <script src="https://kit.fontawesome.com/10fdf55e4b.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="/assets/css/normalize.css" />
-  <link rel="stylesheet" href="/assets/css/main.css" />
-  <script src="/assets/js/main.js" defer></script>
-  <title>Jon Bodnar | Projects</title>
-</head>
-
-<body>
-  <!-- .nav #nav -->
-  <nav id="nav" class="nav">
-    <div class="container nav__wrapper">
-      <div class="nav__title">
-        <h1>
-          <a href="/" class="nav__titlelink">jonathan bodnar</a>
-        </h1>
+  <body>
+    <!-- .nav #nav -->
+    <nav id="nav" class="nav">
+      <div class="container nav__wrapper">
+        <div class="nav__title">
+          <h1>
+            <a href="/" class="nav__titlelink">jonathan bodnar</a>
+          </h1>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="/" class="nav__link">home</a>
+          </li>
+          <li class="nav__item">
+            <a href="/projects/" class="nav__link nav__link--active"
+              >projects</a
+            >
+          </li>
+          <!-- <li class="nav__item"><a href="#" class="nav__link">blog</a></li> -->
+          <!-- <li class="nav__item"><a href="#" class="nav__link">contact</a></li> -->
+        </ul>
       </div>
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a href="/" class="nav__link">home</a>
-        </li>
-        <li class="nav__item"><a href="/projects/" class="nav__link nav__link--active">projects</a></li>
-        <!-- <li class="nav__item"><a href="#" class="nav__link">blog</a></li> -->
-        <!-- <li class="nav__item"><a href="#" class="nav__link">contact</a></li> -->
-      </ul>
-    </div>
-  </nav>
-  <!-- .main #main -->
-  <main id="main" class="main container">
-    <div class="main-left">
-      <h2 class="main-left__title">jonathan bodnar</h2>
-      <img src="/assets/images/atl2.jpg" alt="" class="main__image" />
-    </div>
-    <div class="main-right">
-      <h2 class="main-right__title">jonathan bodnar</h2>
-      <p class="main-right__text">
-        A dedicated web development, user experience, and project management
-        professional who is passionate about personal and professional growth
-        and
-        <abbr title="Information Technology Infrastructure Library">ITIL</abbr>
-        and Scrum certified.
-      </p>
-      <a href="/assets/files/resume-2018.pdf" target="_blank" class="button">view resume <i
-          class="fas fa-file-download"></i></a>
-    </div>
-  </main>
-  <footer id="footer" class="footer">
-    <div class="container">
-      <ul class="footer-list">
-        <li class="footer-list__item">
-          <a href="https://github.com/jmbodnar" class="footer-list__link"><i aria-hidden="true"
-              title="View github profile" class="fab fa-github"></i><span class="sr-only">View github profile</span></a>
-        </li>
-        <li class="footer-list__item">
-          <a href="https://www.linkedin.com/in/jonmbodnar/" class="footer-list__link"><i aria-hidden="true"
-              title="View linkedin profile" class="fab fa-linkedin-in"></i><span class="sr-only">View linkedin
-              profile</span></a>
-        </li>
-        <li class="footer-list__item">
-          <a href="mailto:jon.bodnar+test@gmail.com" class="footer-list__link"><i aria-hidden="true" title="Email me"
-              class="fas fa-paper-plane"></i><span class="sr-only">View linkedin profile</span></a>
-        </li>
-      </ul>
-    </div>
-  </footer>
-</body>
+    </nav>
+    <!-- .main #main -->
+    <main id="main" class="main container">
+      <h2 class="projects-title">Projects</h2>
 
+      <div class="project-container">
+        <img src="/assets/images/trivia.jpg" alt="" class="project__image" />
+        <div class="project__description">
+          <h3 class="project__title">
+            <a
+              href="https://jmbodnar.github.io/TriviaGame/"
+              class="project__link"
+              >Trivia Game</a
+            >
+          </h3>
+          <p>
+            A trivia game using JavaScript, HTML, and CSS.
+          </p>
+          <div class="project__links">
+            <a
+              href="https://github.com/jmbodnar/TriviaGame/tree/master"
+              class="button project__button"
+              >view repo</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="project-container">
+        <img src="/assets/images/word.jpg" alt="" class="project__image" />
+        <div class="project__description">
+          <h3 class="project__title">
+            <a
+              href="https://jmbodnar.github.io/Word-Guess-Game/"
+              class="project__link"
+              >Word Guessing Game</a
+            >
+          </h3>
+          <p>
+            Guess the word in the allowed number of tries.
+          </p>
+          <div class="project__links">
+            <a
+              href="https://github.com/jmbodnar/Word-Guess-Game"
+              class="button project__button"
+              >view repo</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="project-container">
+        <img src="/assets/images/weather.jpg" alt="" class="project__image" />
+        <div class="project__description">
+          <h3 class="project__title">
+            <a
+              href="https://jmbodnar.github.io/Group07-Project01/"
+              class="project__link"
+              >Weather to Drink</a
+            >
+          </h3>
+          <p>
+            Find suggested seasonal drinks by location.
+          </p>
+          <div class="project__links">
+            <a
+              href="https://github.com/jmbodnar/Group07-Project01"
+              class="button project__button"
+              >view repo</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="project-container">
+        <img src="/assets/images/vanilla.jpg" alt="" class="project__image" />
+        <div class="project__description">
+          <h3 class="project__title">
+            <a
+              href="https://jmbodnar.github.io/VanillaJS/"
+              class="project__link"
+              >Small JS Projects</a
+            >
+          </h3>
+          <p>
+            A set of small VanillaJS projects for fun and practice.
+          </p>
+          <div class="project__links">
+            <a
+              href="https://github.com/jmbodnar/VanillaJS"
+              class="button project__button"
+              >view repo</a
+            >
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <footer id="footer" class="footer">
+      <div class="container">
+        <ul class="footer-list">
+          <li class="footer-list__item">
+            <a href="https://github.com/jmbodnar" class="footer-list__link"
+              ><i
+                aria-hidden="true"
+                title="View github profile"
+                class="fab fa-github"
+              ></i
+              ><span class="sr-only">View github profile</span></a
+            >
+          </li>
+          <li class="footer-list__item">
+            <a
+              href="https://www.linkedin.com/in/jonmbodnar/"
+              class="footer-list__link"
+              ><i
+                aria-hidden="true"
+                title="View linkedin profile"
+                class="fab fa-linkedin-in"
+              ></i
+              ><span class="sr-only">View linkedin profile</span></a
+            >
+          </li>
+          <li class="footer-list__item">
+            <a href="mailto:jon.bodnar+test@gmail.com" class="footer-list__link"
+              ><i
+                aria-hidden="true"
+                title="Email me"
+                class="fas fa-paper-plane"
+              ></i
+              ><span class="sr-only">View linkedin profile</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>

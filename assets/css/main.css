@@ -5,11 +5,13 @@
 /* Globals & Mobile */
 
 :root {
-  --primary: hsla(49, 100%, 52%, 1);
-  --secondary: hsla(208, 90%, 50%, 1);
+  /* --primary: hsla(49, 100%, 52%, 1); */
+  --primary: hsla(49, 100%, 70%, 1);
+  /* --secondary: hsla(208, 90%, 50%, 1); */
+  --secondary: hsla(218, 100%, 40%, 1);
   --secondary-light: hsla(200, 85%, 80%, 1);
   --tertiary: hsla(5, 67%, 44%, 1);
-  --dark-gray-text: hsla(207, 8%, 26%, 1);
+  --dark-gray-text: hsla(207, 8%, 22%, 1);
   --light-gray: hsla(200, 11%, 90%, 1);
   --white: hsla(0, 0, 100%, 1);
   --font-headings: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -50,6 +52,11 @@ h6 {
   max-width: 1000px;
   padding: 0 15%;
   margin: 0 auto;
+}
+
+a {
+  text-decoration: underline;
+  color: var(--secondary);
 }
 
 .nav {
@@ -118,7 +125,8 @@ h6 {
   left: 0;
   width: 100%;
   height: 5px;
-  background: var(--secondary);
+  /* background: var(--secondary); */
+  background: var(--secondary-light);
 }
 
 /* End mobile nav stuff */
@@ -127,6 +135,7 @@ h6 {
   text-align: center;
 }
 
+/* Homepage styles */
 .main-left__title {
   font-size: 2.5rem;
   line-height: 1;
@@ -174,7 +183,7 @@ h6 {
   border-bottom: 1px solid hsla(207, 8%, 26%, 0.5);
   border-left: 1px solid hsla(207, 8%, 26%, 0.75);
   border-right: 1px solid hsla(207, 8%, 26%, 0.75);
-  background: hsla(49, 97%, 51%, 1);
+  background: hsla(47, 100%, 67%, 1);
 }
 
 .footer {
@@ -192,6 +201,7 @@ h6 {
   width: 100%;
   height: 5px;
   background: var(--secondary);
+  background: var(--secondary-light);
 }
 
 .sr-only {
@@ -223,6 +233,25 @@ h6 {
   background: hsla(207, 8%, 15%, 1);
   color: var(--secondary-light);
 }
+
+/* end homepage */
+
+/* projects specific, mobile */
+
+.project-container {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.project__image {
+  width: 100%;
+  max-width: 250px;
+  min-width: 175px;
+  border-radius: 50%;
+  border: 1px solid var(--dark-gray-text);
+}
+
+/* end projects */
 
 @media screen and (min-width: 855px) {
   body {
@@ -279,13 +308,14 @@ h6 {
     width: 100%;
     height: 5px;
     background: var(--secondary);
+    background: var(--secondary-light);
   }
 
   .main {
     text-align: left;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(5, auto);
     grid-column-gap: 5px;
   }
 
@@ -325,4 +355,42 @@ h6 {
   .button {
     margin-top: 3rem;
   }
+
+  /* ----- Projects stuff ----- */
+
+  .project-container {
+    grid-column: 1 / 13;
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    grid-template-rows: repeat(3, auto);
+    column-gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .project__image {
+    grid-column: 1 / 3;
+  }
+
+  .project__description {
+    grid-column: 3 / 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .project__description > * {
+    margin: 0;
+  }
+
+  .project__links {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .project__links .button {
+    flex: 0 0 12rem;
+  }
+
+  /* ----- End projects stuff ----- */
 }
