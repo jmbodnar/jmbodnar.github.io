@@ -9,131 +9,44 @@
     <script src="assets/js/main.js" defer></script>
     <title>Jon Bodnar</title>
   </head>
+
   <body>
-    <!-- Header #showcase -->
-    <header id="showcase" class="grid">
-      <div class="content-wrap">
-        <h1>Jonathan Bodnar</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-          explicabo velit, ut aut rerum recusandae provident exercitationem quia
-          nulla enim optio vel doloribus numquam eveniet?
-        </p>
-        <a href="#section-b" class="btn">Read More</a>
-      </div>
-    </header>
-    <!-- Main #main -->
-    <main id="main">
-      <!-- Section #section-a -->
-      <section id="section-a" class="grid">
-        <div class="content-wrap">
-          <h2 class="content-title">Web Development</h2>
-          <div class="content-text">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Voluptatum, dignissimos? Quod libero saepe aperiam, est totam
-              exercitationem perspiciatis ratione excepturi hic facilis vitae
-              possimus, ex dolor quia, cumque odio nobis numquam vero neque!
-              Magnam dolorem nemo molestias maxime pariatur magni.
-            </p>
-          </div>
+    <!-- .nav #nav -->
+    <nav id="nav" class="nav">
+      <div class="container nav__wrapper">
+        <div class="nav__title">
+          <h1>
+            <a href="#" class="nav__titlelink">jonathan bodnar</a>
+          </h1>
         </div>
-      </section>
-
-      <!-- Section #section-b -->
-      <section id="section-b" class="grid">
-        <ul>
-          <li>
-            <div class="card">
-              <img
-                src="/assets/images/small-city-01.jpg"
-                alt=""
-                class="card-image"
-              />
-              <div class="card-content">
-                <h3 class="card-title">Web Development</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Earum, aperiam quibusdam! Delectus, ab a. Maiores facilis
-                  reprehenderit harum dolorem quisquam.
-                </p>
-              </div>
-            </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link nav__link--active">home</a>
           </li>
-          <li>
-            <div class="card">
-              <img
-                src="/assets/images/small-nature-01.jpg"
-                alt=""
-                class="card-image"
-              />
-              <div class="card-content">
-                <h3 class="card-title">Web Development</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Earum, aperiam quibusdam! Delectus, ab a. Maiores facilis
-                  reprehenderit harum dolorem quisquam.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card">
-              <img
-                src="/assets/images/small-tech-01.jpg"
-                alt=""
-                class="card-image"
-              />
-              <div class="card-content">
-                <h3 class="card-title">Web Development</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Earum, aperiam quibusdam! Delectus, ab a. Maiores facilis
-                  reprehenderit harum dolorem quisquam.
-                </p>
-              </div>
-            </div>
-          </li>
+          <li class="nav__item"><a href="#" class="nav__link">projects</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">blog</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">contact</a></li>
         </ul>
-      </section>
-      <!-- Section C #section-c -->
-      <section id="section-c" class="grid">
-        <div class="content-wrap">
-          <h2 class="content-title">Title for Section</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere
-            quasi nesciunt adipisci dolores velit alias est quaerat ex ea
-            deserunt.
-          </p>
-        </div>
-      </section>
-
-      <!-- Section D #section-d -->
-      <section id="section-d" class="grid">
-        <div class="box">
-          <h2 class="content-title">Contact...</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
-            vel nemo fugit, tempora vero ipsum esse delectus. Reiciendis, quas
-            quidem.
-          </p>
-          <p>contact@content.contact</p>
-        </div>
-        <div class="box">
-          <h2 class="content-title">About...</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-            quibusdam officiis molestiae iste inventore libero asperiores fugit
-            quidem harum esse odio explicabo maiores, cum odit officia fugiat
-            natus consectetur adipisci?
-          </p>
-        </div>
-      </section>
+      </div>
+    </nav>
+    <!-- .main #main -->
+    <main id="main" class="main container">
+      <div class="main-left">
+        <h2 class="main-left__title">jonathan bodnar</h2>
+        <img src="assets/images/atl2.jpg" alt="" class="main__image" />
+      </div>
+      <div class="main-right">
+        <h2 class="main-right__title">jonathan bodnar</h2>
+        <p class="main-right__text">
+          A dedicated web development, user experience, and project management
+          professional who is passionate about personal and professional growth and 
+          <abbr title="Information Technology Infrastructure Library"
+            >ITIL</abbr
+          >
+          and Scrum certified.
+        </p>
+        <button class="button">view resume</button>
+      </div>
     </main>
-    <!-- Footer #footer -->
-    <footer id="main-footer" class="grid">
-      <div>Someting</div>
-      <div>Something <a href="#">link content</a></div>
-    </footer>
   </body>
 </html>
