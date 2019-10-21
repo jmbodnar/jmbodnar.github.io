@@ -103,7 +103,6 @@ h6 {
   font-size: 1rem;
   transition: background 0.2s ease, color 0.2s ease;
   position: relative;
-  font-size: 70%;
 }
 
 .nav__link:hover,
